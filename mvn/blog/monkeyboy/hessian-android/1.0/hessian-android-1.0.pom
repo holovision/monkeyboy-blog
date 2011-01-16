@@ -11,22 +11,6 @@
     <properties>
         <project.build.sourceEncoding>${file.encoding}</project.build.sourceEncoding>
     </properties>
-<!--
-    <dependencies>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.8.2</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.jvnet.wagon-svn</groupId>
-            <artifactId>wagon-svn</artifactId>
-            <version>1.9</version>
-            <type>jar</type>
-        </dependency>
-    </dependencies>
--->
     <build>
         <plugins>
             <plugin>
@@ -37,6 +21,18 @@
                     <source>1.6</source>
                     <target>1.6</target>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>2.1.2</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
         <extensions>
