@@ -1,0 +1,1 @@
+This project contains the code examples and some other goodies that help to better understand the Monkeyboy blog.
